@@ -7,4 +7,5 @@ const schema = new Schema({
     interestedIn:{ type: String, required: true},
     description:{ type: String, required: true}
 });
+schema.path('name').index({text: true});
 module.exports = model('Request', schema);

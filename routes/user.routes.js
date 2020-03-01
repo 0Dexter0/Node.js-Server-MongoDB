@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
         res.status(200).send(users)
     } catch (err) {
         throw new Error(err);
-        res.status(500).send({text: 'pidor'})
+        res.status(500).send({text: 'Error'})
     }
 });
 router.get('/:id', async (req, res) => {
@@ -29,7 +29,7 @@ router.get('/:id', async (req, res) => {
         res.status(200).send(user)
     } catch (err) {
         throw new Error(err);
-        res.status(500).send({text: 'pidor'})
+        res.status(500).send({text: 'Error'})
     }
 
 });

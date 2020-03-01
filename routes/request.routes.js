@@ -7,7 +7,9 @@ router.get('/', async (req, res) => {
     try {
         const start = parseInt(req.query.start)  || 0;
         const limit = parseInt(req.query.limit) || 10;
-        const requests = await Request.find()
+        const query = req.query.searchQuery;
+        const searchParams = (query)?{ $text: { $search: query } }:{};
+        const requests = await Request.find(searchParams)
             .skip(start)
             .limit(limit);
         res.setHeader('Access-Control-Allow-Origin', '*');
@@ -15,7 +17,7 @@ router.get('/', async (req, res) => {
         res.status(200).send(requests)
     } catch (err) {
         throw new Error(err);
-        res.status(500).send({text: 'pidor'})
+        res.status(500).send({text: 'Error'})
     }
 
 });
@@ -28,7 +30,7 @@ router.get('/:id', async (req, res) => {
          res.status(200).send(requests)
     } catch (err) {
         throw new Error(err);
-        res.status(500).send({text: 'pidor'})
+        res.status(500).send({text: 'Error'})
     }
 
 });
