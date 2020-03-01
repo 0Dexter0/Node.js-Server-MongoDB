@@ -1,0 +1,18 @@
+#menu nav > a,#menu h1 {
+    color:white
+}
+#menu h1 {
+    text-align:center;
+}
+#menu nav {
+    display:flex;
+    flex-flow:column nowrap;
+}
+#menu nav .nav-list-item {
+    box-sizing:border-box;
+    padding:11px 50px;
+    text-decoration: none;
+    font-family:Monstercat, sans-serif;
+    font-size:15px;
+    cursor:pointer;
+}

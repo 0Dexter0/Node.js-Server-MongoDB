@@ -1,0 +1,36 @@
+#toggler-and-pagination-container #pagination {
+  width:100px;
+  position:relative;
+  color:white;
+}
+#pagination i,#pagination span {
+  position:absolute;
+}
+#pagination span {
+  left:45%;
+  bottom:1px;
+  font-size:23px;
+}
+#pagination i {
+  font-size:18px;
+}
+#pagination i[class="fas fa-chevron-left"] {
+  left:25px;
+  bottom:5px;
+  cursor:pointer;
+}
+#pagination i[class="fas fa-chevron-right"] {
+  right:25px;
+  bottom:5px;
+  cursor:pointer;
+}
+#pagination i[class*="double"] {
+  font-size:20px;
+  bottom:3px;
+}
+#pagination i[class="fas fa-angle-double-left"] {
+  left:0;
+}
+#pagination i[class="fas fa-angle-double-right"] {
+  right:0;
+}

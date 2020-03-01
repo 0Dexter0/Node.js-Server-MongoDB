@@ -1,0 +1,23 @@
+#error-img-container {
+    display:flex;
+    justify-content: center;
+}
+#error-img-container img {
+    width:25%;
+}
+#error-text {
+    margin-top:10px;
+    text-align:center;
+    font-family:Book Antiqua;
+    font-size:20px;
+    color:crimson;
+}
+#button-error {
+    border:none;
+    background-color:crimson;
+    color:white;
+    font-size:18px;
+    padding:5px;
+    cursor:pointer;
+    border:1px solid black;
+}

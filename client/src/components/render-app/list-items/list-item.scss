@@ -1,0 +1,43 @@
+@import '../../../utilits/utilits-css-variables';
+.card {
+    width:25vw;
+    height:13vw;
+    margin-top:10px;
+    border-radius:10px;
+    background-color:$cardColor;
+    border:1px solid $cardColor;
+    &:hover {
+        border:$cardColorHoverBorder;
+    }
+    box-sizing:border-box;
+    padding:13px 0 0 13px;
+    display:flex;
+    flex-flow:column wrap;
+    font-family: Monstercat,sans-serif;
+    margin-left:12px;
+    color:white;
+}
+.card .name  {
+    font-size:17px;
+    font-weight:bold;
+}
+.card .type {
+    margin-top:25px;
+    font-size:15px;
+}
+.card .occupation {
+    font-size:13px;
+}
+.card .email {
+    margin-top:40px;
+    font-size:14px;
+}
+.card .number-of-applications {
+    margin-top:10px;
+    font-size:14px;
+    font-weight:bold;
+}
+.card .typeofsites {
+    font-size:14px;
+    margin-top:3px;
+}

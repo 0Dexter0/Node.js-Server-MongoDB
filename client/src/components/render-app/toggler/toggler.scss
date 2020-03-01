@@ -1,0 +1,36 @@
+@import '../../../utilits/utilits-css-variables';
+#toggler-and-pagination-container {
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left:25px;
+}
+#toggler-and-pagination-container #dropdown-menu {
+    display:flex;
+    width:100px;
+    justify-content: flex-end;
+    position:relative;
+}
+#toggler-and-pagination-container i[class="fas fa-bars"] {
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+}
+#toggler-and-pagination-container #notvisible-dropdown {
+    display:none;
+    overflow:hidden;
+    border:1px solid white;
+    position:absolute;
+    top:18px;
+    z-index:1;
+}
+#toggler-and-pagination-container .links {
+    display: block;
+    padding:10px 15px;
+    background-color:$cardColor;
+    cursor:pointer;
+    border:none;
+    color:white;
+    font-family: Monstercat,sans-serif;
+}
+

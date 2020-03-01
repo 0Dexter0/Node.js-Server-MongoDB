@@ -1,0 +1,29 @@
+#panel {
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  width:22%;
+}
+#panel i {
+  color:white;
+  font-size:18px;
+  margin-right:20px;
+  cursor:pointer;
+}
+#user {
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  height:100%;
+  width:50%;
+  overflow:auto;
+}
+#user img {
+  width:40%;
+  border-radius:50%;
+}
+#user span {
+  color:white;
+  display:block;
+  margin:0px 6px;
+}
