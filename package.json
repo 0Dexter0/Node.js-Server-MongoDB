@@ -1,19 +1,19 @@
 {
-    "name": "frontend-backend",
-    "version": "1.0.0",
-    "description": "bodya and serii production",
-    "main": "index.js",
-    "scripts": {
-      "start-frontend":"npm run start --prefix client",
-      "start-backend": "npm run start --prefix server",
-      "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
-      "inst-frontend": "npm install --prefix client",
-      "inst-backend": "npm install --prefix server",
-      "install-all": "concurrently \"npm run inst-frontend\" \"npm run inst-backend\""
-    },
-    "author": "Bogdan,Backenderi",
-    "license": "ISC",
-    "dependencies": {
-      "concurrently": "^5.1.0"
-    }
+  "name": "frontend-backend",
+  "version": "1.0.0",
+  "description": "bodya and serii production",
+  "main": "index.js",
+  "scripts": {
+    "start-frontend": "npm run start --prefix client",
+    "start-backend": "npm run start --prefix server",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "inst-frontend": "npm install --prefix client",
+    "inst-backend": "npm install --prefix server",
+    "install-all": "concurrently \"npm run inst-frontend\" \"npm run inst-backend\""
+  },
+  "author": "Bogdan,Backenderi",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
